@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> <!-- Add support for characters and symbols -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+	<!-- Makes content better for device users -->
+
+	<link rel="stylesheet" type="text/css" href="styles/style.css"> <!-- Links stylesheet -->
+	<title>Interactive Experience</title>
+</head>
+<body>
+	<div onclick="showsongs()" id="songs">
+		<h2 id="songtitle">Songs</h2>
+		<audio id="loadaudio" src="audios/Awakening.mp3"></audio>
+		<button class="songbutton" onclick="playfirstaudio()">Awakening</button>
+
+		<audio id="loadaudio2" src="audios/sleep.mp3"></audio>
+		<button class="songbutton" onclick="playsecondaudio()">Sleep</button>
+
+		<audio id="loadaudio3" src="audios/forest.mp3"></audio>
+		<button class="songbutton" onclick="playthirdaudio()">Forest</button>
+
+		<audio id="loadaudio4" src="audios/anxious.mp3"></audio>
+		<button class="songbutton" onclick="playfourthaudio()">Anxious</button>
+	</div>
+
+	<div id="lotofballs">
+		<p id="lotofballsmessage">Seems like you have a lot going on there, how about I remove some of that for you?</p>
+		<button onclick="noremove()" class="removebuttons">No</button>
+		<button onclick="yesremove()" class="removebuttons">Yes</button>
+	</div>
+
+	<header id="title">
+		<h1 id="h1title">Click the balls!</h1>		
+		<!--<div id="audiomenu">
+			<button onclick="playaudio()" class="playbutton"><img id="playimg" src="images/play.png"></button>
+			<button onclick="pauseaudio()" class="playbutton"><img id="pauseimg" src="images/pause.png"></button>
+			<button onclick="nextsong()" class="playbutton"><img id="nextimg" src="images/nextsong.png"></button>
+		</div>-->
+	</header>
+
+	<button onclick="playgame()" id="playgame">Play game</button>
+
+	<!--<canvas id="myCanvas"></canvas>-->
+	<!--<div onclick="circleclick()" id="circle"></div>-->
+
+	<div id="canvas">
+		<button onclick="circle()" class="circlestyle" id="circle"></button>
+		<button onclick="circle2()" class="circlestyle" id="circle2"></button>
+	</div>
+
+	<div id="theme">
+		<h2 id="themestitle">Themes</h2>
+		<button onclick="standardtheme()" class="themesbutton">Standard</button>
+		<button onclick="inspotheme()" class="themesbutton">Inspirational</button>
+		<button onclick="animalstheme()" class="themesbutton">Animals</button>
+	</div>
+
+	<!--<button onclick="showsongs()" id="*">Show songs</button>-->
+
+	<!--
+	<div id="nextlevel">
+		<h2>You finished activity <span id="levelchange">0</span></h2>
+		<button onclick="playgame()" id="nextlevelbutton">Next activity</button>
+	</div>
+
+
+<div id="sectionbottom">
+	<h2>Till explode: <span id="sizechange">1</span></h2>
+	<h2>Time playing: <span id="timeplaying"></span>0</h2>
+</div>-->
+
+<script src="scripts/index.js"></script> <!-- Link JavaScript file -->
+
+</body>
+</html>
