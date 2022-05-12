@@ -10,6 +10,7 @@
 	<title>Interactive Experience</title>
 </head>
 <body>
+	<audio id="buttonspawnaudio" src="audios/pop.wav"></audio>
 	<div onclick="showsongs()" id="songs">
 		<h2 id="songtitle">Songs</h2>
 		<audio id="loadaudio" src="audios/Awakening.mp3"></audio>
@@ -23,6 +24,9 @@
 
 		<audio id="loadaudio4" src="audios/anxious.mp3"></audio>
 		<button class="songbutton" onclick="playfourthaudio()">Anxious</button>
+
+		<audio id="loadaudio5" src="audios/softlonely.mp3"></audio>
+		<button class="songbutton" onclick="playfifthaudio()">Soft lonely</button>
 	</div>
 
 	<div id="lotofballs">
@@ -40,7 +44,7 @@
 		</div>-->
 	</header>
 
-	<button onclick="playgame()" id="playgame">Play game</button>
+	<button onclick="playgame()" id="playgame">Play</button>
 
 	<!--<canvas id="myCanvas"></canvas>-->
 	<!--<div onclick="circleclick()" id="circle"></div>-->

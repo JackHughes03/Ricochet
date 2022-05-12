@@ -16,6 +16,7 @@ function circleclick() {
 }
 */
 
+var buttonspawnaudio = document.getElementById('buttonspawnaudio');
 var playgametext = document.getElementById('playgame');
 var canvas = document.getElementById('canvas');
 var lotsofballs = document.getElementById('lotofballs');
@@ -123,6 +124,7 @@ function circle2() {
   if(amount2w == 0) {
     count2w = countw / 2;
     for(let iw=0; iw<count2w; iw++) {
+      buttonspawnaudio.play();
       taskw(iw);
     }
   } 
@@ -198,6 +200,7 @@ function circle() {
   if(amount2 == 0) {
     count2 = count / 2;
     for(let i=0; i<count2; i++) {
+      buttonspawnaudio.play();
       task(i);
     }
   } 
@@ -274,40 +277,55 @@ var firstaudio = document.getElementById('loadaudio');
 var firstaudio2 = document.getElementById('loadaudio2');
 var firstaudio3 = document.getElementById('loadaudio3');
 var firstaudio4 = document.getElementById('loadaudio4');
+var firstaudio5 = document.getElementById('loadaudio5');
 
 function playfirstaudio() {
-  if(firstaudio2.play() || firstaudio3.play() || firstaudio4.play()) {
+  if(firstaudio2.play() || firstaudio3.play() || firstaudio4.play() || firstaudio5.pause()) {
     firstaudio2.pause();
     firstaudio3.pause();
     firstaudio4.pause();
+    firstaudio5.pause();
     firstaudio.play();
   }
 }
 
 function playsecondaudio() {
-  if(firstaudio.play() || firstaudio3.play() || firstaudio4.play()) {
+  if(firstaudio.play() || firstaudio3.play() || firstaudio4.play() || firstaudio5.pause()) {
     firstaudio.pause();
     firstaudio4.pause();
     firstaudio3.pause();
+    firstaudio5.pause();
     firstaudio2.play();
   }
 }
 
 function playthirdaudio() {
-  if(firstaudio2.play() || firstaudio.play() || firstaudio4.play()) {
+  if(firstaudio2.play() || firstaudio.play() || firstaudio4.play() || firstaudio5.pause()) {
     firstaudio2.pause();
     firstaudio4.pause();
     firstaudio.pause();
+    firstaudio5.pause();
     firstaudio3.play();
   }
 }
 
 function playfourthaudio() {
-  if(firstaudio.play() || firstaudio2.play() || firstaudio3.play()) {
+  if(firstaudio.play() || firstaudio2.play() || firstaudio3.play() || firstaudio5.pause()) {
     firstaudio.pause();
     firstaudio2.pause();
     firstaudio3.pause();
+    firstaudio5.pause();
     firstaudio4.play();
+  }
+}
+
+function playfifthaudio() {
+  if(firstaudio.play() || firstaudio2.play() || firstaudio3.play() || firstaudio4.play()) {
+    firstaudio.pause();
+    firstaudio2.pause();
+    firstaudio3.pause();
+    firstaudio4.pause();
+    firstaudio5.play();
   }
 }
 
@@ -320,7 +338,7 @@ function showsongs() {
     showsong.style.opacity = '0.6';
   } else {
     showsong.style.animation = 'none';
-    showsong.style.height = '245px';
+    showsong.style.height = '287px';
     showsong.style.opacity = '1';
   }
 }
