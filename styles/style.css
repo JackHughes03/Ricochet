@@ -233,10 +233,6 @@ html {
 }
 */
 
-#h1title {
-    transition: 1000ms;
-}
-
 #title {
     font-size: 80%;
     display: none;
@@ -257,7 +253,7 @@ html {
     box-shadow: 0 0 20px black;
     /*animation: zoom 3s ease infinite;*/
     background-color: rgb(20, 25, 30);
-    border-radius: 20px;
+    border-radius: 10px;
     border: none;
     border-color: black;
     color: lightskyblue;
