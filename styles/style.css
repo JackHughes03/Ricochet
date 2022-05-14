@@ -8,6 +8,11 @@ html {
     font-family: monospace;
 }
 
+* {
+  touch-action: manipulation;
+}
+
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
