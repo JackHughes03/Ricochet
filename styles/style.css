@@ -108,6 +108,7 @@ html {
 }
 
 #canvas {
+    border: none;
     box-shadow: 0 0 20px black;
     display: none;
     overflow: hidden;
@@ -252,6 +253,8 @@ html {
     /*animation: zoom 3s ease infinite;*/
     background-color: rgb(20, 25, 30);
     border-radius: 20px;
+    border: none;
+    border-color: black;
     color: lightskyblue;
     display: block;
     margin-top: 200px;
