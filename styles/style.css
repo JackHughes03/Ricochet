@@ -228,7 +228,6 @@ html {
 */
 
 #h1title {
-    height: 50px;
     transition: 1000ms;
 }
 
@@ -249,16 +248,16 @@ html {
 }
 
 #playgame {
-    animation: zoom 3s ease infinite;
+    box-shadow: 0 0 20px black;
+    /*animation: zoom 3s ease infinite;*/
     background-color: rgb(20, 25, 30);
-    border-radius: 15px;
+    border-radius: 20px;
     color: lightskyblue;
     display: block;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
     font-size: 3vw;
-    border: 2px solid black;
     width: 20%;
     height: 100px;
     transition: 500ms;
@@ -364,6 +363,13 @@ html {
     cursor: pointer;
 }
 
+#songssection {
+  transition: 400ms;
+  margin-left: 0;
+  display: block;
+  position: absolute;
+}
+
 #songs {
     animation: zoom2 3s ease infinite;
     display: none;
@@ -392,7 +398,7 @@ html {
 
 */
 
-#songtitle {
+.songtitle {
     text-align: center;
     color: white;
     font-size: 20px;

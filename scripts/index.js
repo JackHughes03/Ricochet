@@ -127,7 +127,7 @@ function circle2() {
       buttonspawnaudio.play();
       taskw(iw);
     }
-  } 
+  }
 
   function taskw(iw) {
     setTimeout(function() {
@@ -203,7 +203,7 @@ function circle() {
       buttonspawnaudio.play();
       task(i);
     }
-  } 
+  }
 
   function task(i) {
     setTimeout(function() {
@@ -211,11 +211,11 @@ function circle() {
       canvas.appendChild(circle.cloneNode(true));
       amount2 = amount++;
         //playagain2();
-      //} 
+      //}
     }, 400 * i);
   }
-  
-  
+
+
 
 /*
     setTimeout(function() {
@@ -245,7 +245,7 @@ function circle() {
   /*
   playgametext.style.display = 'block';
   nextlevel.style.display = 'none';
-  */
+  
   var timeleft = 3;
   var downloadTimer = setInterval(function(){
     if(timeleft <= 0){
@@ -256,6 +256,32 @@ function circle() {
     }
     timeleft -= 1;
   }, 1000);
+  */
+
+  playgametext.innerHTML = '3';
+  playgametext.style.width = '30%';
+  setTimeout(function() {
+    playgametext.innerHTML = '2';
+
+    var spin = 0;
+    spin += 180;
+    playgametext.style.transform = "rotatey(" + spin + "deg)";
+    playgametextstyle.transitionDuration = "1s"
+
+  }, 1000);
+
+  setTimeout(function() {
+    playgametext.innerHTML = '1';
+    playgametext.style.width = '70%';
+    var rotate = 0;
+    playgametext.style.transform = "rotate(180deg)";
+    playgametext.style.transitionDuration = "1s";
+
+  }, 2000);
+
+  setTimeout(function() {
+    playgame2();
+  }, 3000);
 }
 //const audio1 = document.getElementById('loadaudio');
 function playgame2() {
@@ -332,7 +358,7 @@ function playfifthaudio() {
 var showsong = document.getElementById('songs');
 
 function showsongs() {
-  if(showsong.style.height == '245px') {
+  if(showsong.style.height == '287px') {
     showsong.style.animation = 'zoom2 3s ease infinite';
     showsong.style.height = '0px';
     showsong.style.opacity = '0.6';
@@ -352,39 +378,16 @@ function yesremove() {
   const circle2 = document.getElementById('circle2');
 }
 
-function inspotheme() {
-  function changeinspo() {
-    h1title.innerHTML = inspoarray[counterinspo];
-    counterinspo++;
-    if (counterinspo >= inspoarray.length) {
-      counterinspo = 0;
-    }
-  }
 
-  var counterinspo = 0;
-  var inspoarray = ['Live your truth', 'Struggle up the hill', "Take aim even badly", "An obstacle is often a stepping stone", "Be a voice not an echo", "Peace is its own reward"];
-  var instinspo = setInterval(changeinspo, 1000);
-}
-
-function standardtheme() {
-  function change() {
-    h1title.innerHTML = quotearray[counter];
-    counter++;
-    if (counter >= quotearray.length) {
-      counter = 0;
+function change() {
+  h1title.innerHTML = quotearray[counter];
+  counter++;
+  if (counter >= quotearray.length) {
+    counter = 0;
     // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
   }
 }
 
 var counter = 0;
-var quotearray = ['This is pretty cool', 'Can you count those discs?', "Can your device keep up?", "Have you got a song playing?"];
-var inst = setInterval(change, 1000);
-}
-
-function animalstheme() {
-  const circle = document.getElementById('circle');
-
-  circle.style.border = '2px solid white';
-  circle.style.backgroundColor = 'transparent';
-  circle.style.backgroundImage = 'url(../images/animals/snake.png)';
-}
+var quotearray = ['This is pretty cool', 'Can you count those balls?', "Can you keep up?", "Have you got a song playing?"];
+var inst = setInterval(change, 9263);
