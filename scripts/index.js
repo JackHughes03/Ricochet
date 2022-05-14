@@ -262,26 +262,31 @@ function circle() {
   playgametext.style.width = '30%';
   setTimeout(function() {
     playgametext.innerHTML = '2';
-
-    var spin = 0;
-    spin += 180;
-    playgametext.style.transform = "rotatey(" + spin + "deg)";
-    playgametextstyle.transitionDuration = "1s"
-
+    var rotate = 0;
+    playgametext.style.transform = "rotate(180deg)";
+    playgametext.style.transitionDuration = "1s";
   }, 1000);
 
   setTimeout(function() {
     playgametext.innerHTML = '1';
-    playgametext.style.width = '70%';
-    var rotate = 0;
-    playgametext.style.transform = "rotate(180deg)";
-    playgametext.style.transitionDuration = "1s";
+
+    var spin = 0;
+    spin += 180;
+    playgametext.style.transform = "rotatey(" + spin + "deg)";
+    playgametextstyle.transitionDuration = "1s";
 
   }, 2000);
 
   setTimeout(function() {
-    playgame2();
+    playgametext.innerHTML = '';
+    playgametext.style.width = '0';
+    playgametext.style.height = '0';
+    playgametext.style.border = 'none';
   }, 3000);
+
+  setTimeout(function() {
+    playgame2();
+  }, 3800);
 }
 //const audio1 = document.getElementById('loadaudio');
 function playgame2() {
