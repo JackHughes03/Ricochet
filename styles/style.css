@@ -1,6 +1,6 @@
 html {
     /*ackground-color: darkkhaki;*/
-    background: linear-gradient(-45deg, #ff00a2, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, white, gray);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
@@ -114,7 +114,7 @@ html {
 
 #canvas {
     border: none;
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 10px black;
     display: none;
     overflow: hidden;
     max-width: 350px;
@@ -133,7 +133,7 @@ html {
 
 #canvas #circle {
     border: 2px solid white;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 5px black;
     display: block;
     width: 10%;
     height: 10%;
@@ -148,7 +148,7 @@ html {
 
 #canvas #circle2 {
     border: 2px solid white;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 5px black;
     display: block;
     width: 10%;
     height: 10%;
@@ -250,7 +250,7 @@ html {
 }
 
 #playgame {
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 10px black;
     /*animation: zoom 3s ease infinite;*/
     background-color: rgb(20, 25, 30);
     border-radius: 10px;
